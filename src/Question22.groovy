@@ -12,10 +12,14 @@ class Question22 {
             it.salary > 5000
         }
 
+        println(map)
+
         //Get the count of employee in each department
+
         Map<Integer, List> map1 = employeeList.groupBy {
             it.departmentNumber
         }
+
         map1.each {
             print("dept = " + it.getKey())
             println(" number of employee " + it.getValue().size())
@@ -41,11 +45,8 @@ class Question22 {
 //        println(map4)
 
 
-
-
-
         // Group employees according to department
-        Map map5=employeeList.groupBy {
+        Map map5 = employeeList.groupBy {
             it.departmentNumber
         }
 
